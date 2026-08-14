@@ -1,0 +1,49 @@
+Quarter-Car Suspension Dynamics & Road-Disturbance Response
+Generated: 2026-08-15 00:23:31
+
+SOURCE-DERIVED PARAMETERS
+m = 100.0000000000 kg
+mu = 10.0000000000 kg
+k1 = 200.0000000000 N/m
+k2 = 200.0000000000 N/m
+c = 500.0000000000 N s/m
+
+SOURCE-DERIVED SIMULATION
+Control force = 0 N
+Road bump 1 = 0.10 m half-sine, 0-20 s
+Road bump 2 = 0.06 m half-sine, 40-60 s
+Simulation duration = 100 s
+
+PASSIVE MODEL CHECK
+Asymptotically stable = 1
+pole_1 = -54.259660000747 +0.000000000000i
+pole_2 = -0.434534108144 +0.000000000000i
+pole_3 = -0.152902945554 +1.293499499300i
+pole_4 = -0.152902945554 -1.293499499300i
+
+NOMINAL RESPONSE METRICS
+Max road displacement = 1.000000000000e-01 m
+Max sprung displacement = 1.042026824871e-01 m
+Max unsprung displacement = 1.026072163325e-01 m
+Max suspension travel = 3.714677088193e-03 m
+Max tire deflection = 1.058621830838e-02 m
+Max abs body acceleration = 1.935445821333e-02 m/s^2
+RMS body acceleration = 4.918130203304e-03 m/s^2
+RMS body displacement = 3.782084778930e-02 m
+RMS suspension travel = 9.526490509233e-04 m
+Peak body/road displacement ratio = 1.042026824871e+00
+Final state norm = 2.475429529175e-05
+
+FREQUENCY RESPONSE
+Peak road-to-body gain = 4.618599413537e+00
+Frequency at peak gain = 2.036329627853e-01 Hz
+
+NEW DAMPING-SENSITIVITY ANALYSIS
+Sweep range = 100.000000 to 1200.000000 N s/m
+Archived nominal damping = 500.000000 N s/m
+Minimum RMS body acceleration in sweep = 3.981406809527e-03 m/s^2
+Damping at minimum RMS body acceleration = 2.000000000000e+02 N s/m
+
+INTERPRETATION NOTE
+The archived script is a passive suspension simulation because the first/control-force input is set identically to zero. The public project does not claim active suspension control.
+The frequency-response and damping-sensitivity sections are new analysis added during modernization and are clearly separated from the source-derived nominal simulation.
